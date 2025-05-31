@@ -9,7 +9,6 @@ public class Methods {
     static Admin admin = new Admin();
 
     public static void userSignup(){
-        sc.nextLine();
         System.out.println("----User Signup----");
         System.out.print("Enter your name: ");
         String name = sc.nextLine();
@@ -24,7 +23,7 @@ public class Methods {
         }
         User newUser = new User(name, pass, userIdCounter++);
         users.add(newUser);
-        System.out.println("Signup successful. Your ID is: " + newUser.accountNumber);
+        System.out.println("Signup successful. Your Account Number is: " + newUser.accountNumber);
     }
 
     public static void userLogin(){

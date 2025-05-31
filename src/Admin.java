@@ -18,10 +18,11 @@ public class Admin extends Person{
 
     public void viewAllUsers(List<User> users){
         System.out.println("----Users List----");
+        int count = 1;
         for(User user : users){
-            System.out.println("Name: " + user.name + ", Account Number: " + user.accountNumber);
-            System.out.println("--------------------");
+            System.out.println(count++ + ".Name: " + user.name + ", Account Number: " + user.accountNumber);
         }
+        System.out.println("--------------------");
     }
 
     @Override
