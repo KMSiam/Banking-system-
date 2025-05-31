@@ -27,8 +27,6 @@ public class Admin extends Person{
 
     @Override
     public void showDetails() {
-        System.out.println("Admin Name: " + name);
-        System.out.println("Admin Account Number: " + accountNumber);
     }
 
 }
